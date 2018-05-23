@@ -19,6 +19,8 @@ The API provided does not currently support CORS headers, so Javascript code can
 * Even though the scoreboard may be part of an overall app, I assumed the user would want the keystrokes to work from anywhere on the page. So the keydown event handler is tied to the body. 
 
 ### Architecture notes
-* This was coded using the jQuery library to facilitate accessing the DOM. It could have been done with vanilla JS but the use of the 35k minified code seemed worth the time savings.
+* This was coded using the jQuery library to facilitate accessing the DOM and to keep the overall project relatively concise (and 35k minified code is quite small). Other architectures could have other benefits:
+** It could have been done with vanilla JS but the use of the library seemed worth the time savings.
+** A framework like Angular would allow for more separation of concerns and better testability. In Angular, the scoreboard could be a component and the API call could be wrapped in an injected service.
 * Since this was to be treated as potentially a feature in a larger app, the scoreboard was coded as a jQuery plugin. So the background, header, and a scoreboard placeholder appear on the index.html, but the template and code for the scoreboard appear in scoreboard.js and scoreboard.css. This has the drawback of having HTML code in a JS file. Other frameworks like Angular or React would be a cleaner approach.
 
