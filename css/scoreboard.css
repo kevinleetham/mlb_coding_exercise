@@ -1,0 +1,129 @@
+.scoreboard-plugin {
+    overflow-x: hidden;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    position: relative;
+}
+
+.scoreboard-plugin .loading {
+    text-align: center;
+    color: #aaa;
+}
+
+.scoreboard-plugin .date-selector {
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.scoreboard-plugin .date-selector .date {
+    font-size:125%;
+    color:#ffd400;
+}
+
+.scoreboard-plugin .date-selector .instructions {
+    font-size:80%;
+    color: #aaa;
+}
+
+.scoreboard-plugin .no-games {
+    text-align: center;
+}
+
+.scoreboard-plugin .overall-instructions {
+    text-align: center;
+    font-size:80%;
+    color: #aaa;
+    margin-top:50px;
+}
+
+.scoreboard-plugin .selected-header {
+    text-align: center;
+    margin-bottom:20px
+}
+
+.scoreboard-plugin .selected-footer {
+    margin-top: 0px;
+    text-align: center;
+    white-space: pre-line;
+    width: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80%;
+}
+
+.scoreboard-plugin .tile-wrapper {
+  border-color:1px solid lightblue;
+  height:90px;
+  display:flex;
+  transition: .2s ease-in-out;
+}
+
+.scoreboard-plugin .tile {
+    flex: 0 0 auto;
+    width:124px;
+    height:70px;
+    background: url('http://mediadownloads.mlb.com/mlbam/preview/atlphi_447487_th_7_preview.jpg');
+    margin-left:10px;
+    margin-right:10px;
+    transition: .2s ease-in-out;
+}
+
+.scoreboard-plugin .tile.selected {
+    transform: scale(1.25);
+    transform-origin: center;
+    border: 2px solid white;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.scoreboard-plugin .overlay {
+    position: absolute;
+    display:none;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(206, 206, 206, 0.95);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.scoreboard-plugin .overlay table {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color:black;
+}
+
+.scoreboard-plugin .overlay table th.border {
+    border-bottom: 1px solid black;
+}
+.scoreboard-plugin .overlay table td {
+    text-align: center;
+}
+
+.scoreboard-plugin .overlay table td.team-name-col {
+    text-align:left;
+}
+
+.scoreboard-plugin .overlay table .team-name {
+    margin:0;
+}
+.scoreboard-plugin .overlay table .team-stats {
+    font-size:80%;
+    margin:0;
+}
+
+.scoreboard-plugin .overlay table .winner {
+    font-weight: bold;
+}
+
+.scoreboard-plugin .overlay .instructions {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #555;
+}

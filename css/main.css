@@ -1,0 +1,23 @@
+body {
+    background: url('http://mlb.mlb.com/mlb/images/devices/ballpark/1920x1080/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(19, 19, 19, 0.99); 
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    
+}
+
+/* For smaller responsive devices, force a minimum width on the background so it doesn't become tiny */
+@media (max-width: 1000px) {
+    body {
+        background-size: 1000px 562px; /* Force the image to its minimum width */
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
